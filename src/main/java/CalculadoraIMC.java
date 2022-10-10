@@ -15,6 +15,6 @@ public class CalculadoraIMC {
 
         System.out.printf(user + " o seu IMC é = %.2f\n", imc); // %.2f mostra apenas 2 casas decimais.
         System.out.printf("O seu nome é %s e seu peso é %d", user, peso);
-        // %s é string, %d é inteiros e %f é decimais.
+        // %s é string, %d é inteiros e %f é decimais..
     }
 }
