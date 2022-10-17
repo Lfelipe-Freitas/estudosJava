@@ -1,4 +1,4 @@
-package Aulas;
+package aulas;
 
 public class Variaveis {
     //Execução do nosso programa java
