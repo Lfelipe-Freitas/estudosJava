@@ -1,5 +1,7 @@
 package aulas.poo;
 
+import java.util.ArrayList;
+
 public class Pessoa {
     //propriedades/atributos, no caso aqui, uma pessoa.
     String nome;
@@ -7,6 +9,8 @@ public class Pessoa {
     int idade;
     double altura;
     double peso;
+
+    ArrayList<Pessoa> conhecidos = new ArrayList<>();
 
     //construtor
    Pessoa() {
@@ -36,5 +40,13 @@ public class Pessoa {
     double imc() {
        double imc = this.altura / (this.peso * this.peso);
         return imc;
+    }
+
+    void addPessoaNova(Pessoa pessoa) {
+        this.conhecidos.add(pessoa);
+    }
+
+    boolean conhecePessoa(Pessoa pessoa) {
+       return this.conhecidos.contains(pessoa);
     }
 }
